@@ -8,14 +8,26 @@
 </head>
 
 <body>
-<h1>First CRUD App</h1>
+<h1>First CRUD To-do List</h1>
 
 <div id="container">
 
 <!-- div to create post -->
 <div id="left">
-<form action="">
 
+<!-- Form to add to-do list -->
+<form action="post">
+<label for="post">Add Your Task Here</label>
+<br>
+
+<!-- Textarea to include Task -->
+<textarea name="post" id="" cols="30" rows="10"></textarea>
+<br>
+
+<div id="msg"></div>
+
+<!-- Button to Submit -->
+<button type="submit">Submit</button>
 
 </form>
 </div>

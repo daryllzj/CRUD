@@ -5,10 +5,13 @@ body {
 
 .container{
     display: flex;
+    gap: 50px;
+    border-style: solid black;
 }
 
 #posts{
     width: 300px;
+    gap: 25px;
 }
 
 i {
@@ -23,6 +26,7 @@ i {
 
 .options {
     display: flex;
+    gap: 25px
 }
 
 #msg {

@@ -1,4 +1,2 @@
 # CRUD
-CRUD Projects
-
-Daryl was here
+First CRUD Project using HTML, CSS and Javascript

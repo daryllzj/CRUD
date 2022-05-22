@@ -33,9 +33,14 @@ let uploadData =() => {
     <p>${data.text}</p>
     <span class="options">
       <i onClick="editPost(this)" class="fas fa-edit"></i>
-      <i onClick="deletePost(this)" class="fas fa-trash-alt"></i>
+      <i onClick="deleteData(this)" class="fas fa-trash-alt"></i>
     </span>
     </div>
     `;
     input.value = "";
+}
+
+// function to delete grandparent
+let deleteData =(e) => {
+    e.parentElement.parentElement.remove();
 }

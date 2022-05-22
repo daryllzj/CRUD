@@ -32,7 +32,7 @@ let uploadData =() => {
     <div>
     <p>${data.text}</p>
     <span class="options">
-      <i onClick="editPost(this)" class="fas fa-edit"></i>
+      <i onClick="editData(this)" class="fas fa-edit"></i>
       <i onClick="deleteData(this)" class="fas fa-trash-alt"></i>
     </span>
     </div>
@@ -42,5 +42,12 @@ let uploadData =() => {
 
 // function to delete grandparent
 let deleteData =(e) => {
+    e.parentElement.parentElement.remove();
+}
+
+// function to edit date
+let editData =(e) => {
+    // add data in p to textarea
+    input.value = e.parentElement.previousElementSibling.innerHTML;
     e.parentElement.parentElement.remove();
 }
